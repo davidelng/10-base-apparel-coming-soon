@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-[Solution URL](https://your-solution-url.com)
-[Live Site URL](https://your-live-site-url.com)
+[Solution URL](https://github.com/davidelng/10-base-apparel-coming-soon)
+[Live Site URL](https://davidelng.github.io/10-base-apparel-coming-soon/)
 
 ## My process
 
