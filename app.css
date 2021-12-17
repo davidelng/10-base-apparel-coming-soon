@@ -130,6 +130,26 @@ body {
     background: hsl(0, 80%, 86%);
 }
 
+/* ERROR CLASSES */
+.error__img, .popup {
+    display: none;
+}
+
+.invalid {
+    border: 2px solid var(--soft-red);
+}
+
+.error {
+    display: block;
+    margin-right: .5rem;
+}
+
+.invalid__popup {
+    display: block;
+    margin: -1rem 3rem 1rem;
+    color: var(--soft-red);
+}
+
 /* ATTRIBUTION */
 .attribution {
     color: var(--desaturated-red);
@@ -141,10 +161,6 @@ body {
     color: hsl(228, 45%, 44%);
 }
 
-footer {
-    display: none;
-}
-
 /* DESKTOP */
 @media (min-width: 62.25rem) {
 
@@ -152,6 +168,12 @@ footer {
     body {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
+    }
+
+    footer {
+        position: fixed;
+        top: 90%;
+        left: 20%;
     }
 
 
@@ -219,6 +241,11 @@ footer {
     .email__form button {
         width: 8rem;
         padding: 1rem;
+    }
+
+    /* ERRORS */
+    .invalid__popup {
+        margin: -1rem 2rem 1rem;
     }
 
 }

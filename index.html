@@ -28,9 +28,13 @@
             </p>
         </section>
 
-        <section class="email__form">
-            <input type="email" name="email" id="email" placeholder="Email Address" required>
-            <button type="submit"><img src="images/icon-arrow.svg" alt="submit icon"></button>
+        <section class="email">
+            <div class="email__form" id="email__form">
+                <input type="email" name="email" id="email" placeholder="Email Address">
+                <img class="error__img" id="error" src="images/icon-error.svg" alt="error icon">
+                <button type="submit" id="btn"><img src="images/icon-arrow.svg" alt="submit icon"></button>
+            </div>
+            <p class="popup" id="popup">please provide a valid email</p>
         </section>
     </main>
 
