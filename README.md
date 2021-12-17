@@ -30,12 +30,13 @@ Users should be able to:
 ### Screenshot
 
 ![](screenshot/desktop.png)
+![](screenshot/desktop_active.png)
 ![](screenshot/mobile.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+[Solution URL](https://your-solution-url.com)
+[Live Site URL](https://your-live-site-url.com)
 
 ## My process
 
@@ -46,18 +47,15 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+- JavaScript
 
 ### What I learned
 
-Aaaaaaaaa
+Form validation through js
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+Better html structure and js script
 
 ## Author
 
