@@ -23,20 +23,13 @@ p {
     margin: 0;
 }
 
-/* Remove list styles */
+/* Remove list styles and decorations */
 ul, ol {
     list-style: none;
 }
 
 a {
     text-decoration: none;
-}
-
-/* Set body defaults */
-body {
-    min-height: 100vh;
-    font-family: 'Josefin Sans', sans-serif;
-    background: var(--gradient-1);
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -47,6 +40,14 @@ select {
     font: inherit;
 }
 
+/* Set body defaults */
+body {
+    min-height: 100vh;
+    font-family: 'Josefin Sans', sans-serif;
+    background: var(--gradient-1);
+}
+
+/* LOGO */
 .logo {
     padding: 1.8em;
 }
@@ -56,26 +57,25 @@ select {
     height: 1.3rem;
 }
 
-.hero__image img {
+/* MOBILE IMG */
+.hero__mobile img {
     max-width: 100%;
     width: 100%;
     height: auto;
 }
 
-.hero__image img:nth-of-type(1) {
-    display: block;
-}
-.hero__image img:nth-of-type(2) {
+.hero__desktop {
     display: none;
 }
 
+/* TEXT SECTION */
 .text {
     text-align: center;
     font-size: .9rem;
     color: var(--desaturated-red);
 }
 
-.text header {
+.text h1 {
     margin: 4rem 2rem 1rem;
     text-transform: uppercase;
     font-size: 2.5rem;
@@ -84,7 +84,7 @@ select {
     line-height: 2.8rem;
 }
 
-.text header span {
+.text h1 span {
     font-weight: 600;
     color: var(--dark-grayish-red);
 }
@@ -94,14 +94,13 @@ select {
     line-height: 1.3rem;
 }
 
+/* EMAIL FORM */
 .email__form {
     display: flex;
     align-items: center;
     margin: 2rem;
-    /* padding: .4rem; */
     border-radius: 30px;
     border: 1px solid hsla(0, 36%, 70%, 0.5);
-    /* overflow: hidden; */
 }
 
 .email__form input {
@@ -131,78 +130,7 @@ select {
     background: hsl(0, 80%, 86%);
 }
 
-/* .email__form input:not(:focus):not(:placeholder-shown):invalid {
-    border: 2px solid var(--soft-red);
-} */
-
-/* DESKTOP */
-
-@media (min-width: 56.25rem) {
-
-    .hero__image img:nth-of-type(1) {
-        display: none;
-    }
-    .hero__image img:nth-of-type(2) {
-        display: none;
-    }
-
-    body {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr );
-        grid-template-rows: repeat(autofill, minmax(12.5rem, 1fr) );
-        background-image: url(images/bg-pattern-desktop.svg);
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-
-    .logo {
-        padding-top: 0;
-    }
-
-    .logo img {
-        height: 2rem;
-    }
-
-    .hero__image {
-        grid-column: 4/-1;
-        grid-row: 1/4;
-        background-image: url(images/hero-desktop.jpg);
-        background-size: cover;
-    }
-
-    .logo, main, footer {
-        grid-column: 1/4;
-        grid-row: span 1;
-        padding-left: 10rem;
-        padding-right: 5rem;
-        align-self: center;
-        justify-self: left;
-    }
-
-    .text header {
-        font-size: 4rem;
-        line-height: 4.5rem;
-        text-align: left;
-        margin-left: 0;
-        margin-top: 0;
-    }
-
-    .text p {
-        margin-left: 0;
-        margin-right: 12rem;
-        font-size: 1rem;
-        text-align: left;
-        line-height: 1.8rem;
-    }
-
-    .email__form {
-        margin-left: 0;
-        margin-right: 12rem;
-    }
-
-}
-
-
+/* ATTRIBUTION */
 .attribution {
     color: var(--desaturated-red);
     font-size: 11px;
@@ -211,4 +139,86 @@ select {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+footer {
+    display: none;
+}
+
+/* DESKTOP */
+@media (min-width: 62.25rem) {
+
+    /* SET GRID  */
+    body {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+
+    /* DESKTOP IMG ON THE RIGHT */
+    .hero__desktop {
+        display: block;
+        grid-column: 4/-1;
+        background-image: url(images/hero-desktop.jpg);
+        background-size: cover;
+    }
+
+    .hero__mobile {
+        display: none;
+    }
+
+    /* STUFF ON THE LEFT  */
+    main {
+        grid-column: 1/4;
+        background-image: url(images/bg-pattern-desktop.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 2rem 15rem 2rem 10rem;
+    }
+
+    /* LOGO */
+    .logo {
+        padding-left: 0;
+    }
+
+    .logo img {
+        height: 2rem;
+    }
+
+    /* TEXT SECTION  */
+    .text {
+        margin-top: 5rem;
+    }
+
+    .text h1 {
+        font-size: 4rem;
+        line-height: 4.5rem;
+        text-align: left;
+        margin-left: 0;
+        margin-top: 0;
+        letter-spacing: 1rem;
+    }
+
+    .text p {
+        margin-left: 0;
+        font-size: 1rem;
+        text-align: left;
+        line-height: 1.8rem;
+    }
+
+    /* EMAIL FORM  */
+    .email__form {
+        margin-left: 0;
+    }
+
+    .email__form input {
+        font-size: 1rem;
+        margin-left: 2rem;
+    }
+    
+    .email__form button {
+        width: 8rem;
+        padding: 1rem;
+    }
+
 }
