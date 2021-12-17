@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-[Solution URL](https://github.com/davidelng/10-base-apparel-coming-soon)
+[Solution URL](https://github.com/davidelng/10-base-apparel-coming-soon)  
 [Live Site URL](https://davidelng.github.io/10-base-apparel-coming-soon/)
 
 ## My process
